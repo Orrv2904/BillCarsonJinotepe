@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esta descripción es la que aparece en los buscadores debajo de la URL" />
+	<link href="./styles/practica7.css" rel="stylesheet" type="text/css" />
+	<link href="./styles/formulario.css" rel="stylesheet" type="text/css" />
+	<link href="./styles/resets.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./formulario.css">
+	
+	<title>Registro</title>
+</head>
+
+<body>
+	<header>
+		<a href="../index.html" class='logo'>
+			<h1>Bill Carson</h1>
+			<img src="./ImgFactura/imgLogo.png" />
+		</a>
+		<nav>
+			<a class="ultimos" href="../index.html">Regresar a la página principal</a>
+			
+		<!--</nav>
+		<div class="options">
+			<img src="./img/Search.png" />
+			<img src="./img/User.png" /> -->
+			<!-- <div class="userMenu">
+					<a href="">Login</a>
+					<a href="">Registrarme</a>
+				</div> -->
+		</div>
+
+	</header>
+	<main>
+		<h1>Crear Factura</h1>
+		<form>
+			<div class='field'>
+				<label>Nombre del Cliente</label>
+				<input name='nombre' type='name' required value="" placeholder='Nombre' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Apellidos del Cliente</label>
+				<input name='apellidos' type='name' required value="" placeholder="Apellidos" autocomplete />
+			</div>
+			<div class='field'>
+				<label>Tipo de Ave</label>
+				<select name='estadoLaboral' required>
+					<option selected disabled>Escoga una opción</option>
+					<option>Gallo patas rojas</option>
+					<option>Gallo patas amarillas</option>
+					<option>Gallo patas verdes</option>
+				</select>
+			</div>
+			<div class='field'>
+				<label>Email del Cliente</label>
+				<input name='Email' type='email' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Línea del Ave</label>
+				<input name='Linea' type='linea' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Datos Agregados</label>
+				<input name='Datos Extras' type='Datos' required value="" placeholder="Opcional" autocomplete />
+			</div>
+			<div class='field'>
+				<label>Marca del Ave</label>
+				<input name='Marca' type='marca' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Granja del Ave</label>
+				<input name='Granja' type='granja' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Teléfono del Cliente</label>
+				<input name='Telefono' type='number' autocomplete />
+			</div>
+			<div class='textBox'>
+				<label>Otros datos</label>
+				<textarea></textarea>
+			</div>
+			<div class='gustos'>
+				<label>Sexo del Ave</label>
+				<div><input name='gustos' type='radio' />Macho</div>
+				<div><input name='gustos' type='radio' />Hembra</div>
+			</div>
+			<div class='submit'>
+				<button onclick="javascript:window.print()" class=" btn btn-info btn-print">
+					Facturar y Imprimir
+				</button>
+		</form>
+	</main>
+</body>
+
+</html>
